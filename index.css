@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+
+}
+ul.menu {
+    display: inline-block;
+    list-style-type: none;
+}
+li.menu_list {
+    height: 85px;
+    width: 85px;
+    position: relative;
+}
+li.menu_list .front,
+a.side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-out;
+    cursor: pointer;
+}
+li.menu_list .front {
+    background-color: #5d6266;
+    color: #090909;
+    transform-origin: 0 0;
+}
+a.side {
+    background-color: black;
+    color: white;
+    transform-origin: 0 0 85px;
+    transform: rotateY(-90deg);
+}
+li.menu_list:hover a.side {
+    transform: rotateY(0deg);
+}
+li.menu_list:hover .front {
+    transform: rotateY(90deg);
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    margin-top: -550px;
+}
+
+.armor-header {
+    background-color: rgba(248, 241, 241, 0.373);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.8) 40%);
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+
+.armor-info {
+    padding: 8px;
+    text-align:center;
+    font-size: large;
+    color: #adb8c0;
+}
+
+.armor-class {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: solid;
+    text-decoration: underline;
+    color: #acb5bb;
+}
+
+.main-tile-dimension {
+    display: flex;
+    width:100%;
+    background-color: rgba(6, 6, 6, 0.906);
+    color: white;
+    flex-direction: column;
+    align-content:flex-end;
+    padding-bottom: 8px;
+    border-style: groove;
+}
+
+.image-container-armor {
+    display: 100%;
+    height: 100%px;
+    width: 100%;
+    align-items: center;
+}
+
+.armor-socials {
+    color: white;
+}
+
+.armor-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+    background-color: black;
+}
+
+.footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: rgba(0, 0, 0, 0.375);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    border-top: #d4d7d8;
+}
+
+.map {
+    width: 250px;
+    padding: 5px;
+    padding-left: 20px;
+    height: 25%;
+}
+
+.mapimg {
+    width: 350px;
+    padding-bottom:15%;
+    padding-left: 30px;
+}
+
+.foothead {
+    display: flex;
+}
+
+.foot-info {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font: 2em;
+    padding: 3%;
+    padding-left: 40px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font: 3em;
+    color: white;
+    padding: 3%;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font: 3em;
+    color: white;
+    padding: 3%;
+}
+
+.tiny {
+    color: white;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+
+
+
+
